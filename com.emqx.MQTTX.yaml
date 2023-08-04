@@ -28,8 +28,8 @@ modules:
       - install -D com.emqx.MQTTX.metainfo.xml /app/share/metainfo/com.emqx.MQTTX.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/emqx/MQTTX/releases/download/v1.9.4/MQTTX-1.9.4.AppImage
-        sha256: 7ff1e06b36c9cf5aa472ef8d7079148a98d18f4976c8259b49fd6acb0e93b644
+        url: https://github.com/emqx/MQTTX/releases/download/v1.9.5/MQTTX-1.9.5.AppImage
+        sha256: 3d5c823c0b827aac748b5cd593ee63a7dc792b9ceb11c3771d898a8c684d5189
         dest-filename: MQTTX.AppImage
         x-checker-data:
           type: json
