@@ -1,11 +1,11 @@
 app-id: com.emqx.MQTTX
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: "24.08"
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node14
+  - org.freedesktop.Sdk.Extension.node20
 separate-locales: false
 command: mqttx.sh
 finish-args:
@@ -35,9 +35,11 @@ modules:
           type: json
           url: https://api.github.com/repos/emqx/MQTTX/releases/latest
           version-query: .tag_name | sub("^v"; "")
-          url-query: .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
+          url-query:
+            .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
             | .browser_download_url
-          timestamp-query: .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
+          timestamp-query:
+            .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
             | .created_at
       - type: file
         path: com.emqx.MQTTX.desktop
