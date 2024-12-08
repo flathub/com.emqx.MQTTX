@@ -3,7 +3,7 @@
   <id>com.emqx.MQTTX</id>
 
   <name>MQTT X</name>
-  <summary>An Elegant Cross-platform MQTT 5.0 Desktop Client</summary>
+  <summary>Your All-in-One MQTT Client Toolbox</summary>
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Apache-2.0</project_license>
@@ -11,6 +11,8 @@
   <developer_name>EMQ</developer_name>
 
   <url type="homepage">https://mqttx.app/</url>
+  <url type="vcs-browser">https://github.com/emqx/MQTTX</url>
+  <url type="bugtracker">https://github.com/emqx/MQTTX/issues</url>
 
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
