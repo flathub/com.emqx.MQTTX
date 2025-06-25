@@ -1,9 +1,9 @@
 app-id: com.emqx.MQTTX
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: '24.08'
 separate-locales: false
 command: mqttx.sh
 finish-args:
@@ -26,18 +26,16 @@ modules:
       - install -D com.emqx.MQTTX.metainfo.xml /app/share/metainfo/com.emqx.MQTTX.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/emqx/MQTTX/releases/download/v1.11.0/MQTTX-1.11.0.AppImage
-        sha256: d58a50b2bb9a765743fd9f5de3ae6bb2af4592c6af9a5fdb083f69de517d8676
+        url: https://github.com/emqx/MQTTX/releases/download/v1.12.0/MQTTX-1.12.0.AppImage
+        sha256: 4c7cdd0beb6f9cc1f9b814f0af8ac990cbbd182630c7e27204e1155b4475c6d6
         dest-filename: MQTTX.AppImage
         x-checker-data:
           type: json
           url: https://api.github.com/repos/emqx/MQTTX/releases/latest
           version-query: .tag_name | sub("^v"; "")
-          url-query:
-            .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
+          url-query: .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
             | .browser_download_url
-          timestamp-query:
-            .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
+          timestamp-query: .assets[] | select(.name == "MQTTX-" + $version + ".AppImage")
             | .created_at
       - type: file
         path: com.emqx.MQTTX.desktop
