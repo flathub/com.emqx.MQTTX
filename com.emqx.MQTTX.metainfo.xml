@@ -91,4 +91,11 @@
       <image>https://raw.githubusercontent.com/emqx/MQTTX/master/assets/mqttx-preview.png</image>
     </screenshot>
   </screenshots>
+  <keywords>
+    <keyword>mqtt client</keyword>
+    <keyword>mqtt toolbox</keyword>
+    <keyword>mqttx</keyword>
+    <keyword>mqtt editor</keyword>
+    <keyword>mosquitto alternative</keyword>
+  </keywords>
 </component>
