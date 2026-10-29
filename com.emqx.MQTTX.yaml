@@ -1,9 +1,9 @@
 app-id: com.emqx.MQTTX
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '26.08'
 separate-locales: false
 command: mqttx.sh
 finish-args:
